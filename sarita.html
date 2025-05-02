@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday My Love</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Great Vibes', cursive;
+      background: url('images/kalyan1.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      text-align: center;
+    }
+
+    .card {
+      padding: 30px;
+      border-radius: 30px;
+      max-width: 600px;
+      box-shadow: 0 0 25px rgba(255, 105, 180, 0.6);
+      animation: fadeIn 1s ease-in-out;
+      position: relative;
+    }
+
+    .card img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 4px solid rgba(255,105,180,0.8);
+      margin-bottom: 20px;
+    }
+
+    .card h1 {
+      font-size: 42px;
+      color: aqua;
+      margin: 10px 0;
+    }
+
+    .card p {
+      font-size: 26px;
+      color: crimson;
+      margin: 15px 0;
+      line-height: 1.5;
+    }
+
+    .from {
+      margin-top: 20px;
+      font-size: 22px;
+      color: #e5ccff;
+    }
+
+    .heart {
+      font-size: 4.5em;
+      color: red;
+      animation: heartbeat 1.2s infinite;
+      margin-top: 20px;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      25%, 75% { transform: scale(1.2); }
+      50% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    audio {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 20px;
+      }
+
+      .card img {
+        width: 150px;
+        height: 150px;
+      }
+
+      .card h1 {
+        font-size: 32px;
+      }
+
+      .card p {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="Sarita.png" alt="Happy Birthday">
+    <<h1>Congratulations My Love ❤</h1>
+    <p>
+        I'm so proud of you, my shining star 🌟<br>
+        In just 3 months, you've proven your brilliance and dedication 💼<br>
+        This achievement is just the beginning, my Queen 👑<br>
+        Your hard work and strength inspire me every day 💪<br>
+        Here's to many more milestones ahead, together 🥂
+    </p>
+    <p class="from">With all my love,<br>Ramu Siripalli 💖</p>
+    <div class="heart">❤</div>
+    <button onclick="document.getElementById('bg-music').play()" style="
+    margin-top: 60px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff69b4;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  ">Play Music 🎵</button>
+  
+  <audio id="bg-music" loop>
+    <source src="chitra.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  </div>
+ 
+  <!-- Hidden autoplay audio -->
+  <audio autoplay loop>
+    <source src="kalyan.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
